@@ -25,4 +25,4 @@ before_script:
 ### Testing
 ###
 script:
-  - make test
+  - make test ARGS="-var assumer_account_role_name=test -var assumer_account_id=1234567890"
