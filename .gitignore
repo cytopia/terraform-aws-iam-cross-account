@@ -1,0 +1,8 @@
+# Deny Terraform runtime files
+.terraform
+terraform.tfstate
+*.tfstate*
+terraform.tfvars
+
+# Allow tfvars in examples
+!/examples/admin-role/terraform.tfvars
