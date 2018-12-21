@@ -240,7 +240,7 @@ cross_account_role_force_detach_policies = true
 cross_account_role_id = XYZXYZXYZYXZYXZYXZ
 cross_account_role_name = the-role-name
 cross_account_role_path = /engineering/admin/
-cross_account_role_session_duration = 28800
+cross_account_role_session_duration = 36000
 ```
 
 

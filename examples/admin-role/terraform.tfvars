@@ -1,27 +1,22 @@
-# The current account
-name = "patrick-admin2"
+name = "the-role-name"
 path = "/engineering/devops/"
-description = "Managed by Terraform2"
 
 policies = [{
-  name = "test",
+  name = "policy-1-name",
   path = "/",
-  desc = "Description1",
-  file = "data/policy.json"
+  desc = "Description 1",
+  file = "data/policy1.json"
 },{
-  name = "test2",
+  name = "policy-2-name",
   path = "/",
-  desc = "Description2",
+  desc = "Description 2",
   file = "data/policy2.json"
 }]
 
-# The account from which to assume the current account
-assumer_account_id = "445804254772"
-assumer_account_role_name = "AWS-Common-Secure-STS-Admins"
-
-
 tags = {
-  Name = "patrick"
+  Name  = "prod-admin-role"
+  Env   = "prod"
+  Owner = "terraform"
 }
 
-max_session_duration = "28800"
+max_session_duration = "36000"
