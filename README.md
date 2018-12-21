@@ -14,6 +14,26 @@ specified from files. See usage or examples for more detail.
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
+## Quick setup
+
+```hcl
+module "iam_cross_account_role" {
+  source = "github.com/cytopia/terraform-aws-iam-cross-account?ref=v0.1.0"
+
+  name = "the-role-name"
+
+  policies = [{
+    name = "policy-name",
+    file = "data/policy.json"
+  }]
+
+  # The account from which to assume the current account
+  assumer_account_id        = "1234567890"
+  assumer_account_role_name = "AWS-Admins"
+}
+```
+
+
 ## Usage
 
 ```hcl
